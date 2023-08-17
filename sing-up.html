@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sing up</title>
+
+</head>
+
+<body>
+    <div class="nav-menu">
+        <div class="container nav-menu__items">
+            <div class="left">
+                <div class="nav-menu__item">
+                    <a href="index.html">MK Time</a>
+                </div>
+                <div class="nav-menu__item" class="custom-select">
+                    <a href="ladies-collection.html">collection</a>
+                </div>
+                <div class="nav-menu__item">Our Brand</div>
+                <div class="nav-menu__item">
+                    <a href="contact-us.html">Contact us</a>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="nav-menu__item">
+                    <a href="sign-in.html">sign-in</a>
+                </div>
+                <div class="nav-menu__item">
+                    <a href="sing-up.html">sing-up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="create-account">
+        <h1>Create account</h1>
+        <hr>
+        <div class="container">
+
+            <form class="sign-up">
+                <input id="name" type="text" placeholder="First name" />
+                <input id="second name" type="text" placeholder="Second name" />
+
+                <input id="pwd" type="pwd" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    required />
+                <input id="confirm pwd" type="pwd" placeholder="Confirm password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    required />
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <hr class="copyright">
+        <div>copyright &copy; MK Time 2023</div>
+    </div>
+
+</body>
+
+</html>

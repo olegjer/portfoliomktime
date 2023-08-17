@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@200&display=swap');
+
+
+body {
+    background-color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+
+.nav-menu {
+    background-color: #04AA6D;
+}
+
+.nav-menu__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+
+}
+
+.custom-select {
+    width: 200px;
+    background-color: lightgray;
+}
+
+.right,
+.left {
+    text-transform: uppercase;
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+
+.right {
+    width: 12%;
+}
+
+/* header */
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+p {
+    color: lightgray;
+}
+
+/* images */
+
+img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.container {
+    padding: 0 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* footer */
+.footer {
+    padding: 80px 0;
+    background-color: #04AA6D;
+}
+
+.footer__title {
+    margin-bottom: 30px;
+}
+
+.item__title {
+    padding: 15px 0;
+}
+
+.footer p {
+    color: black;
+}
+
+/* forhim-forher__content */
+
+.forhim-forher__content {
+    display: flex;
+    justify-content: center;
+    column-gap: 70px;
+    padding: 50px 0;
+    flex-wrap: wrap;
+
+}
+
+.foto-for-him-her {
+
+    border: 2px solid black;
+    width: 20%;
+    height: 280px;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+    min-width: 300px;
+
+}
+
+.section-watchs p {
+    color: black;
+}
+
+/* section-watchs */
+
+.section-watchs {
+    padding: 50px 0;
+}
+
+.section-watchs__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+
+.section-watchs__content p {
+    padding-top: 10px;
+}
+
+.foto {
+    width: 20%;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    border: 2px solid black;
+    height: 450px;
+    min-width: 250px;
+}
+
+.addtocart {
+    padding: 14px 20px;
+    text-align: center;
+    background-color: gray;
+    margin-top: 51px;
+}
+
+.copyright {
+    margin-top: 100px;
+}
+
+/* get in touch column */
+.get_in_touch p {
+    color: black;
+    padding: 0 10px 20px;
+}
+
+.flex_container_get_in_touch {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+}
+
+.get_in_touch_item {
+    border: 2px solid black;
+}
+
+.get_in_touch__title {
+    padding: 30px 0 10px 0;
+}
+
+/* sing-in */
+.sign-in__form {
+    padding: 50px 0;
+}
+
+.form-group {
+    margin-bottom: 30px;
+
+}
+
+.sign-in__form label {
+    display: block;
+    text-align: left;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 4px;
+
+}
+
+.sign-in__form button {
+    display: block;
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 0;
+    border-radius: 4px;
+    border: none;
+    margin: 10px 0;
+}
+
+.sign-in__form .wrapper {
+    text-align: left;
+}
+
+
+.sign-in__form .cancelbtn {
+    background-color: #f44336;
+
+}
+
+/* sing-up */
+.sign-up {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    padding: 50px 0;
+}
+
+.sign-up input {
+    width: 49%;
+    margin-bottom: 30px;
+
+    padding: 14px 20px;
+    border-radius: 4px;
+}
+
+.sign-up button {
+    width: 100%;
+
+    background-color: #47a482;
+    color: white;
+    padding: 14px 0;
+    border-radius: 4px;
+    border: none;
+}
+
+@media only screen and (max-width:1000px) {
+    .right {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .right {
+        width: 18%;
+    }
+
+    .foto-for-him-her {
+        width: 80%;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+
+    .flex_container {
+        flex-direction: column;
+    }
+
+
+}
+
+@media only screen and (max-width:850px) {
+    .right {
+        width: 20%;
+    }
+
+    .left {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .flex_container {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        max-width: 1000px;
+    }
+
+    .section-watchs__content {
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .sign-up input {
+        width: 100%;
+    }
+
+    .foto-for-him-her {
+        height: 320px;
+    }
+}
